@@ -1,9 +1,8 @@
 """Import the Account class from the Account.py file."""
-from Account import Account 
+from Account import Account
 with open('/mnt/data/Account.py', 'r') as file:
     account_content_new = file.read()
 
-    
 
 # Define a function for the Savings Account
 def create_savings_account(balance, interest_rate, months):
@@ -23,7 +22,7 @@ def create_savings_account(balance, interest_rate, months):
     Account = Account(balance, 0)
 
     # Calculate interest earned
-    interest_earned = balance * (interest_rate / 100) * (months / 12)
+    interest_earned = balance * (interest_rate / 100 * months / 12)
 
 
     # Update the savings account balance by adding the interest earned
